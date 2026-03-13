@@ -1,0 +1,50 @@
+/* Reset & base */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background:#f5f7fa; color:#333; line-height:1.6; scroll-behavior: smooth;}
+a { text-decoration:none; color:#2563eb; }
+a:hover { color:#1e40af; }
+
+/* Header & Nav */
+header { background: linear-gradient(135deg,#1f2937,#4b5563); color:#fff; padding:50px 20px; text-align:center; }
+header h1 { font-size:2.5em; margin-bottom:10px; }
+header p { font-size:1.2em; }
+nav { background:#374151; display:flex; justify-content:center; flex-wrap:wrap; }
+nav a { color:#fff; padding:15px 20px; display:inline-block; transition:0.3s; }
+nav a:hover { background:#4b5563; border-radius:5px; }
+
+/* Section headings */
+h2 { font-size:2em; margin-bottom:20px; border-bottom:3px solid #2563eb; display:inline-block; padding-bottom:5px; color:#111827; }
+section { padding:60px 20px; max-width:1000px; margin:auto; }
+
+/* Cards */
+.cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card { background:#fff; padding:25px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); flex:0 0 45%; transition:0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.15);}
+.card h3 { color:#2563eb; margin-bottom:10px; }
+.card p { font-size:1em; }
+.btn { display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; border-radius:5px; margin-top:10px; transition:0.3s;}
+.btn:hover { background:#1e40af; }
+
+/* About */
+.about img { width:180px; border-radius:50%; margin-bottom:20px; border:3px solid #2563eb; display:block; margin-left:auto; margin-right:auto; }
+.about p { max-width:750px; margin:auto; font-size:1.1em; }
+
+/* Slides / Demos */
+.demo-item { background:#fff; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-bottom:20px; }
+.demo-item iframe { width:100%; height:300px; border:none; border-radius:5px; }
+
+/* Contact */
+.contact a { color:#2563eb; text-decoration:none; }
+.contact a:hover { text-decoration:underline; }
+form { display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto; }
+input, textarea { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:1em; }
+button { padding:10px; border:none; border-radius:5px; background:#2563eb; color:#fff; font-size:1em; cursor:pointer; transition:0.3s; }
+button:hover { background:#1e40af; }
+
+/* Footer */
+footer { background:#1f2937; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+
+/* Responsive */
+@media (min-width:768px){
+    .cards { justify-content:space-between; }
+}
